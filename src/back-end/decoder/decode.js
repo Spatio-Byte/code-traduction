@@ -12,7 +12,7 @@ let textResult = document.querySelector('.coded-result');
 
 function encode(texte, cle) {
     if (!cle) {
-        throw new Error("La clé ne peut pas être vide.");
+        throw new Error("the key cannot be empty");
     }
 
     const table_cryptage = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 éèù!,.?@#$%^&*()_+-=[]{}|;:"`¤µ<>/£~°§';
@@ -26,7 +26,7 @@ function encode(texte, cle) {
             const indexTexte = table_cryptage.indexOf(char);
             const indexCle = table_cryptage.indexOf(cle[keyIndex % cle.length]);
             if (indexCle === -1) {
-                throw new Error(`Le caractère '${cle[keyIndex % cle.length]}' de la clé n'est pas valide.`);
+                throw new Error(`The char '${cle[keyIndex % cle.length]}' of the key is not valid!`);
             }
             const indexChiffre = (indexTexte + indexCle) % table_cryptage.length;
             encodedText += table_cryptage[indexChiffre];
@@ -41,7 +41,7 @@ function encode(texte, cle) {
 
 function decode(texte, cle) {
     if (!cle) {
-        throw new Error("La clé ne peut pas être vide.");
+        throw new Error("The key cannot be empty!");
     }
 
     const table_cryptage = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 éèù!,.?@#$%^&*()_+-=[]{}|;:"`¤µ<>/£~°§';
@@ -55,7 +55,7 @@ function decode(texte, cle) {
             const indexTexte = table_cryptage.indexOf(char);
             const indexCle = table_cryptage.indexOf(cle[keyIndex % cle.length]);
             if (indexCle === -1) {
-                throw new Error(`Le caractère '${cle[keyIndex % cle.length]}' de la clé n'est pas valide.`);
+                throw new Error(`The char '${cle[keyIndex % cle.length]}' of the key is not valid!`);
             }
             const indexOriginal = (indexTexte - indexCle + table_cryptage.length) % table_cryptage.length;
             decryptedText += table_cryptage[indexOriginal];
@@ -72,11 +72,11 @@ function uncodeDecode () {
     if (ToCoded.checked) {
         let result = encode(textEntry.value, keyEntry.value);
         if (result.length < 1) {
-            textResult.textContent = `Un des champs n'est sûrement pas remplis`;
+            textResult.textContent = `One of the entry are not filled`;
             textResult.style.backgroundColor = "rgb(73,73,73)";
             textResult.style.borderColor = "rgb(73,73,73)";
         } else {
-            textResult.textContent = `Cryptage réussi : ${result}`;
+            textResult.textContent = `Sucessfully encrypted : ${result}`;
             textResult.style.backgroundColor = "rgb(73,73,73)";
             textResult.style.borderColor = "rgb(73,73,73)";
         };
@@ -84,11 +84,11 @@ function uncodeDecode () {
     } else if (ToText.checked) {
         let result = decode(textEntry.value, keyEntry.value);
         if (result.length < 1) {
-            textResult.textContent = `Un des champs n'est sûrement pas remplis`;
+            textResult.textContent = `One of the entry are not filled`;
             textResult.style.backgroundColor = "rgb(73,73,73)";
             textResult.style.borderColor = "rgb(73,73,73)";
         } else {
-            textResult.textContent = `Décryptage réussi : ${result}`;
+            textResult.textContent = `Sucessfully decrypted : ${result}`;
             textResult.style.backgroundColor = "rgb(73,73,73)";
             textResult.style.borderColor = "rgb(73,73,73)";
         };

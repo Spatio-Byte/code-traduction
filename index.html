@@ -11,11 +11,11 @@
         <div class="text-content big-text"><a href="http://github.com/Spatio-Byte/" target="_blank">SPATIO</a>-INCODER</div>
     </div>
     <div class="coded-result"></div>
-    <div class="text-content small-text" id="description-text">scripts made by me with the vigenere encoding <br>((i add to the encoding special characters for more security also spaces are encoded))</div>
+    <div class="text-content small-text" id="description-text">scripts made by me with the vigenere cipher <br>((i add to the cipher special characters for more security also spaces are encoded))</div>
     <br>
     <br>
-    <textarea name="text_entry" id="text-entry" placeholder="ici l'entrée du code à décrypter ou le message à crypter" spellcheck="false" oninput="removeLeadingSpace1()"></textarea>
-    <textarea name="code-entry" id="code-entry" placeholder="ici la clé de cryptage/décryptage" spellcheck="false" oninput="removeLeadingSpace2()"></textarea>
+    <textarea name="text_entry" id="text-entry" placeholder="the message to ENCRYPT or DECRYPT" spellcheck="false" oninput="removeLeadingSpace1()"></textarea>
+    <textarea name="code-entry" id="code-entry" placeholder="the key for the ENCRYPTION/DECRYPTION" spellcheck="false" oninput="removeLeadingSpace2()"></textarea>
     <script>
         function removeLeadingSpace2() {
           const textarea = document.getElementById('code-entry');
@@ -31,11 +31,11 @@
         }
     </script>
     <div class="radio-list">
-        <input type="radio" name="mode" id="radio-text-coded" class="radio" checked> coder
-        <input type="radio" name="mode" id="radio-coded-text" class="radio"> decoder
+        <input type="radio" name="mode" id="radio-text-coded" class="radio" checked> ToENCRYPTED
+        <input type="radio" name="mode" id="radio-coded-text" class="radio"> ToDECRYPTED
     </div>
     <div class="uncode-decode-button">
-        <input type="button" value="decode / uncode" id="du-button">
+        <input type="button" value="ENCRYPT / DECRYPT" id="du-button">
     </div>
     <script src="src/back-end/decoder/decode.js"></script>
 </body>
