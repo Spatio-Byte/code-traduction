@@ -1,1 +1,10 @@
 @font-face {font-family: bebasNeue-regular;src: url('fonts/BebasNeue-Regular.ttf') format('truetype') ;}body {background-color: black;font-family: bebasNeue-regular, sans-serif;color: white;display: flex;flex-direction: column;}textarea {resize: none;color: rgb(0, 0, 0);font-size: 1em;padding: 12px 50px;padding-bottom: 25%;width: 50%;margin: auto;border: 5px solid hsl(0, 0%, 25%);border-radius: 8px;}.radio-list {display: flex;justify-content: center;}.uncode-decode-button {padding-top: 20px;display: flex;justify-content: center;}#du-button {background-color: hsl(221, 100%, 60%);border: solid 2px hsl(221, 100%, 60%);border-radius: 8px;font-size: 2em;transition: all 0.1s linear;}#du-button:hover {border-width: 5px;}.text-content {font-size: 1.8em;color: white;}.big-text {font-size: 3em;}.small-text {font-size: 1.2em;}#description-text {justify-self: center;align-self: center;font-style: italic;}
+.coded-result {
+    background-color: black;
+    border: solid black 8px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

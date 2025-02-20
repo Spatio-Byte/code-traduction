@@ -10,16 +10,19 @@
     <div class="top page">
         <div class="text-content big-text">SPATIO-INCODER</div>
     </div>
-    <div class="text-content small-text" id="description-text">Page développé et déployé par Spatio-Byte sur github <br> elle vous permet d'encoder du texte ( non sécurisé je précise )</div>
+    <div class="coded-result"></div>
+    <div class="text-content small-text" id="description-text">Page développé et déployé par Spatio-Byte sur github <br> elle vous permet d'encoder du texte</div>
     <br>
     <br>
-    <textarea name="entry" id="text-entry"></textarea>
+    <textarea name="text_entry" id="text-entry" placeholder="ici l'entrée du code à décrypter ou le message à crypter"></textarea>
+    <textarea name="code-entry" id="code-entry" placeholder="ici la clé de cryptage/décryptage"></textarea>
     <div class="radio-list">
-        <input type="radio" name="mode" id="radio-text-coded" class="radio"> to uncode
-        <input type="radio" name="mode" id="radio-coded-text" class="radio"> to text
+        <input type="radio" name="mode" id="radio-text-coded" class="radio" checked> coder
+        <input type="radio" name="mode" id="radio-coded-text" class="radio"> decoder
     </div>
     <div class="uncode-decode-button">
         <input type="button" value="decode / uncode" id="du-button">
     </div>
+    <script src="src/back-end/decoder/decode.js"></script>
 </body>
 </html>
