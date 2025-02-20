@@ -1,2 +1,3 @@
-Web App for encoding texts or other things if it's a string,
-Work in progress the encoding script is not published yet
+Entirely finished more adjustements in the futur please credit my github page if you re-use my vigenere cipher JavaScript function 
+the encoding function encode also all the spaces and characters, caps and low caps are supported : specials chars like : " ! ù $ £ : / ; . ? , * µ = + - @ ^ <> _ ` ~ & # {} [] | éè ()
+and others character 
