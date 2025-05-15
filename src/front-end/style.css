@@ -1,2 +1,17 @@
-@font-face {font-family: bebasNeue-regular;src: url('fonts/BebasNeue-Regular.ttf') format('truetype') ;}body {background-color: black;font-family: bebasNeue-regular, sans-serif;color: white;display: flex;flex-direction: column;}textarea {resize: none;text-decoration: none;color: rgb(255, 255, 255);font-size: 1em;padding: 12px 50px;padding-bottom: 12.5%;width: 50%;margin: auto;border: 5px solid hsl(0, 0%, 25%);border-radius: 8px;transition: color 0.2s linear;}textarea:hover{color: black;}textarea:focus{color: black;}.radio-list {display: flex;justify-content: center;}.uncode-decode-button {padding-top: 20px;display: flex;justify-content: center;}#du-button {background-color: hsl(221, 100%, 60%);border: solid 2px hsl(221, 100%, 60%);border-radius: 8px;font-size: 2em;transition: all 0.1s linear;}#du-button:hover {border-width: 5px;color: white;background-color: hsl(202, 100%, 60%);border-color: hsl(202, 100%, 60%);}.text-content {font-size: 1.8em;color: rgb(138, 138, 138);transition: color 0.2s linear;}.text-content:hover{color: white;}.big-text {font-size: 3em;}.small-text {font-size: 1.2em;}#description-text {justify-self: center;align-self: center;font-style: italic;}.coded-result{font-family : arial, sans-serif;background-color: black;border: solid black 8px;border-radius: 8px;font-size: 1.2em;margin: auto;margin-top: 10px;margin-bottom: 10px;}#code-entry {padding: 10px 20px;padding-bottom: 9%;width: 50%;margin: auto;}a{color: hsl(240, 100%, 67%);transition: all 0.2s linear;}a:hover{color: aqua;}textarea::placeholder {color: grey;opacity: 1;transition: all 0.3s ease;position: absolute;top: 50%;left: 10px;transform: translateY(-50%);}textarea:focus::placeholder {opacity: 0;transform: translateY(-100%);font-size: 12px;color: #007BFF;}
+@font-face {font-family: bebasNeue-regular;src: url('fonts/BebasNeue-Regular.ttf') format('truetype') ;}
+body {background-color: black;font-family: bebasNeue-regular, sans-serif;color: white;display: flex;flex-direction: column;}
+textarea {resize: none;text-decoration: none;color: rgb(255, 255, 255);font-size: 1em;padding: 12px 50px;padding-bottom: 12.5%;width: 50%;margin: auto;border: 5px solid hsl(0, 0%, 25%);border-radius: 8px;transition: color 0.2s linear;}
+textarea:hover{color: black;}
+textarea:focus{color: black;}
+.radio-list {display: flex;justify-content: center;}
+.uncode-decode-button {padding-top: 20px;display: flex;justify-content: center;}
+#du-button {background-color: hsl(221, 100%, 60%);border: solid 2px hsl(221, 100%, 60%);border-radius: 8px;font-size: 2em;transition: all 0.1s linear;}
+#du-button:hover {border-width: 5px;color: white;background-color: hsl(202, 100%, 60%);border-color: hsl(202, 100%, 60%);}
+.text-content {font-size: 1.8em;color: rgb(138, 138, 138);transition: color 0.2s linear;}
+.text-content:hover{color: white;}
+.big-text {font-size: 3em;}
+.small-text {font-size: 1.2em;}
+#description-text {justify-self: center;align-self: center;font-style: italic;}
+.coded-result{font-family: Arial, Helvetica, sans-serif;border: solid black 8px;border-radius: 8px;font-size: 1.2em;margin: auto;margin-top: 10px;margin-bottom: 10px;}
+#code-entry {padding: 10px 20px;padding-bottom: 9%;width: 50%;margin: auto;}a{color: hsl(240, 100%, 67%);transition: all 0.2s linear;}a:hover{color: aqua;}textarea::placeholder {color: grey;opacity: 1;transition: all 0.3s ease;position: absolute;top: 50%;left: 10px;transform: translateY(-50%);}textarea:focus::placeholder {opacity: 0;transform: translateY(-100%);font-size: 12px;color: #007BFF;}
 /*Yep just on one line bro, I wish you good luck if you want to debug the css haha ^^*/
